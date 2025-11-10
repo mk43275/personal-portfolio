@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minji Kim Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left"><a href="#about-section">Minji Kim</a></div>
+      <div class="right">
+        <a href="#about-section">About</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#cyber-section">Cybersecurity</a>
+        <a href="#awards-section">Other Experience & Awards</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#leave-message-section">Leave a Message!</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="about-section">
+    <h2>Hey World, I'm Minji!</h2>
+    <div class="headshot">
+      <picture>
+        <source srcset="images/webp/headshot.webp" type="image/webp" />
+        <img src="images/headshot.png" alt="Minji headshot" />
+      </picture>
+    </div>
+    <div class="bio">
+      <p>
+        Hey! I'm Minji, a UT Austin technologist focused on building impactful, scalable solutions at the intersection of AI/ML, data, and security. I love turning messy, real-world datasets into useful products and insights.
+      </p>
+      <br />
+      <p>
+        Outside of work and school, I enjoy climbing, lifting, hiking, and trying new workout classes.
+      </p>
+    </div>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/mk43275" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="projects-section">
+    <h2>Projects</h2>
+
+    <div class="project-subsection">
+      <h3>Machine Learning & Data</h3>
+      <div class="swiper card-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="https://github.com/mk43275/MR-JaL" target="_blank" class="project-box">
+              <picture>
+                <source srcset="images/webp/MRJAL.webp" type="image/webp" />
+                <img src="images/MRJAL.png" alt="Less Annoying RoboCaller" />
+              </picture>
+              <h4>Less Annoying RoboCaller</h4>
+              <h5><em>Python, Deep Learning</em></h5>
+              <p>Multimodal emotion recognition across voice + transcript to improve automated customer service routing and responses.</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://github.com/mk43275/Model-Minds" target="_blank" class="project-box">
+              <picture>
+                <source srcset="images/webp/ModelMinds.webp" type="image/webp" />
+                <img src="images/ModelMinds.png" alt="Phish in the Web" />
+              </picture>
+              <h4>Phish in the Web</h4>
+              <h5><em>Python, Supervised Learning</em></h5>
+              <p>Interactive tool that classifies a URL as phishing or safe and explains key features driving the decision.</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://github.com/mk43275/I310D-Data-Detectives" target="_blank" class="project-box">
+              <div class="thumb" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></div>
+              <h4>Telco Anti‑Churn Initiative</h4>
+              <h5><em>Python, ML, EDA</em></h5>
+              <p>Analyzed telco customer churn and built predictive models to surface risk drivers and recommend targeted retention actions.</p>
+              <div class="badges"><span class="badge">EDA</span><span class="badge">Feature Eng.</span><span class="badge">Classification</span></div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://github.com/mk43275/Pittsburgh" target="_blank" class="project-box">
+              <div class="thumb" aria-hidden="true"><i class="fa-solid fa-city"></i></div>
+              <h4>Safer City for Pittsburgh</h4>
+              <h5><em>Python, Data Engineering, Viz</em></h5>
+              <p>Integrated 100k+ external records and performed EDA on 4k+ properties to identify condemned properties and propose mitigation strategies; presented findings to the CDO and City leadership.</p>
+              <div class="badges"><span class="badge">Data Cleaning</span><span class="badge">Integration</span><span class="badge">Visualization</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-subsection" id="cyber-section">
+      <h3>Cybersecurity</h3>
+      <div class="swiper card-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-box">
+              <div class="thumb" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+              <h4>Cyber 9/12 Strategy Challenge</h4>
+              <h5><em>Policy Analysis, Threat Modeling</em></h5>
+              <p>Placed 6th overall (Austin) and 4th overall (Washington, D.C.). Produced policy memos and briefings aligning technical insights with national-security strategy.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-box">
+              <div class="thumb" aria-hidden="true"><i class="fa-solid fa-network-wired"></i></div>
+              <h4>UT Austin RSOC – Security Analyst</h4>
+              <h5><em>Blue Team, Monitoring</em></h5>
+              <p>Investigated alerts, triaged incidents, and documented response playbooks to strengthen campus SOC operations and analyst handoffs.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-box">
+              <div class="thumb" aria-hidden="true"><i class="fa-solid fa-landmark"></i></div>
+              <h4>Texas Cybersecurity Clinic – City of Devine</h4>
+              <h5><em>Consultant, Public Sector</em></h5>
+              <p>Performed risk assessments and recommended pragmatic controls for a municipal environment, balancing cost, impact, and feasibility.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="awards-section">
+    <h2>Other Experience & Awards</h2>
+    <ul>
+      <li>National Security Fellow – Girl Security</li>
+      <li>NobleReach Scholar – NobleReach</li>
+      <li>President – Girls Who Code @ UT Austin</li>
+      <li>Benonine Muse Scholarship</li>
+      <li>Undergraduate Research Fellowship</li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <i class="fa-brands fa-python"></i>
+      <i class="fa-brands fa-java"></i>
+      <i class="fa-brands fa-swift"></i>
+      <i class="fa-brands fa-figma"></i>
+      <i class="fa-brands fa-git-alt"></i>
+      <i class="fa-brands fa-github-alt"></i>
+      <i class="fa-solid fa-database"></i>
+      <i class="devicon-r-plain"></i>
+      <i class="devicon-c-plain-wordmark"></i>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="leave-message-section">
+    <h2>Leave a Message!</h2>
+    <form id="contact-form" aria-labelledby="contact-form-heading">
+      <h3 id="contact-form-heading" class="visually-hidden">Contact form</h3>
+      <input type="text" name="website" id="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="hp" />
+      <div class="form-row">
+        <label for="from_name">Name</label>
+        <input type="text" id="from_name" name="from_name" required placeholder="Your name" />
+      </div>
+      <div class="form-row">
+        <label for="reply_to">Email</label>
+        <input type="email" id="reply_to" name="reply_to" required placeholder="you@example.com" />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required placeholder="How can I help?"></textarea>
+      </div>
+      <button type="submit" id="send-btn">Send</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Minji Kim. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Year
+      const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
+      // Init all Swipers
+      document.querySelectorAll('.card-swiper').forEach((el) => {
+        new Swiper(el, { centeredSlides: false, spaceBetween: 0, slidesPerView: 'auto' });
+      });
+
+      // ===== EmailJS keys (replace these) =====
+      const EMAILJS_PUBLIC_KEY = 'UpNi0GjFfjxYSC_FnFD5Y';
+      const SERVICE_ID         = 'service_jme9w4e';
+      const TEMPLATE_ID        = 'template_qnvxodt';
+
+      if (window.emailjs && EMAILJS_PUBLIC_KEY && !EMAILJS_PUBLIC_KEY.includes('YOUR_')) {
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+      }
+
+      const form    = document.getElementById('contact-form');
+      const status  = document.getElementById('form-status');
+      const sendBtn = document.getElementById('send-btn');
+
+      if (form) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          if (form.querySelector('input[name="website"]').value) return; // honeypot
+
+          if ([EMAILJS_PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID].some(v => !v || v.includes('YOUR_'))) {
+            status.textContent = 'Form not configured yet. Please set your EmailJS keys.';
+            status.className = 'status error';
+            return;
+          }
+
+          sendBtn.disabled = true;
+          status.textContent = 'Sending…';
+          status.className = 'status sending';
+
+          try {
+            await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form);
+            form.reset();
+            status.textContent = 'Thanks! Your message has been sent.';
+            status.className = 'status success';
+          } catch (err) {
+            console.error(err);
+            status.textContent = 'Sorry, something went wrong. Please try again later or email me directly.';
+            status.className = 'status error';
+          } finally {
+            sendBtn.disabled = false;
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
+# all rights to Steph Ran
