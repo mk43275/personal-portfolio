@@ -2,9 +2,11 @@
 :root { --text-color:#1a1c20; --link-color:#ffffff; --background-color:#eeeff1; font-size:17px; }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:5rem}
-@font-face{font-family:"Steph";src:url("fonts/steph-font.ttf");font-weight:normal}
-@font-face{font-family:"Steph";src:url("fonts/steph-font-bold.ttf");font-weight:bold}
-body{font-family:'Steph',sans-serif;color:var(--text-color);background:var(--background-color)}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 a{color:var(--text-color);text-decoration:none}
 
 /* NAV */
