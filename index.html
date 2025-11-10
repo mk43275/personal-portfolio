@@ -2,254 +2,240 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Minji Kim Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+
+  <!-- Swiper (for card rows) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
   <header>
-<nav>
-  <div class="left"><a href="#about-section">Minji Kim</a></div>
-  <div class="right">
-    <a href="#about-section">About</a>
-    <a href="#skills-section">Skills</a>
-    <a href="#projects-section">Projects</a>
-    <a href="#experience-section">Experience</a>
-    <a href="#awards-section">Awards</a>
-    <a href="#leave-message-section">Leave a Message!</a>
-  </div>
-</nav>
+    <nav>
+      <div class="left"><a href="#about-section">Minji Kim</a></div>
+      <div class="right">
+        <a href="#about-section">About</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#experience-section">Experience</a>
+        <a href="#awards-section">Awards</a>
+        <a href="#leave-message-section">Leave a Message!</a>
+      </div>
+    </nav>
   </header>
 
+  <!-- About -->
   <section id="about-section">
-    <h2>Hello World, I'm Minji!</h2>
+    <h2>Hey World, I'm Minji!</h2>
     <div class="headshot">
       <picture>
-        <source srcset="images/webp/headshot.webp" type="image/webp" />
-        <img src="images/headshot.png" alt="Minji headshot" />
+        <source srcset="images/webp/headshot.webp" type="image/webp"/>
+        <img src="images/headshot.png" alt="Minji headshot"/>
       </picture>
     </div>
     <div class="bio">
-      <p>
-        Hey! I'm Minji, a UT Austin graduate focused on building impactful, scalable solutions at the intersection of AI/ML, data, and security. I am passionate about turning messy, real-world datasets into useful products and insights.
-      </p>
-      <br />
-      <p>
-        Outside of work and school, I enjoy climbing, lifting, hiking, and trying new workout classes.
-      </p>
+      <p>UT Austin technologist building scalable, human-centered AI/ML and data systems—turning messy real-world data into useful products and insights.</p>
+      <br/>
+      <p>Outside of work and school: climbing, lifting, hiking, and trying new workout classes.</p>
     </div>
     <div class="social-links">
       <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
       <a href="https://github.com/mk43275" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
     </div>
   </section>
-  
+
   <div class="divider"></div>
 
+  <!-- Skills (category cards + badges) -->
   <section id="skills-section">
-  <h2>Skills</h2>
-
-  <div class="skills-grid">
-    <!-- Programming -->
-    <div class="skill-card">
-      <h3>Programming</h3>
-      <div class="badges">
-        <span class="badge">Python</span>
-        <span class="badge">SQL</span>
-        <span class="badge">MySQL</span>
-        <span class="badge">Swift</span>
-        <span class="badge">R</span>
-        <span class="badge">JavaScript</span>
-      </div>
-    </div>
-
-    <!-- Data Analysis -->
-    <div class="skill-card">
-      <h3>Data Analysis</h3>
-      <div class="badges">
-        <span class="badge">EDA</span>
-        <span class="badge">Pandas</span>
-        <span class="badge">Matplotlib</span>
-        <span class="badge">Excel</span>
-        <span class="badge">Tableau</span>
-        <span class="badge">Power BI</span>
-        <span class="badge">Quantitative</span>
-        <span class="badge">Qualitative</span>
-        <span class="badge">G Suite</span>
-      </div>
-    </div>
-
-    <!-- Machine Learning -->
-    <div class="skill-card">
-      <h3>Machine Learning</h3>
-      <div class="badges">
-        <span class="badge">ETL</span>
-        <span class="badge">NLP</span>
-        <span class="badge">Deep Learning</span>
-        <span class="badge">Data Mining</span>
-        <span class="badge">Feature Eng.</span>
-        <span class="badge">Data Modeling</span>
-        <span class="badge">Trend Forecasting</span>
-      </div>
-    </div>
-
-    <!-- Cloud & Tools -->
-    <div class="skill-card">
-      <h3>Cloud & Tools</h3>
-      <div class="badges">
-        <span class="badge">AWS</span>
-        <span class="badge">Git</span>
-        <span class="badge">GitHub</span>
-      </div>
-    </div>
-  </div>
-</section>
-  <div class="divider"></div>
-
-<section id="projects-section">
-  <h2>Projects</h2>
-
-  <div class="project-subsection">
-    <h3>Machine Learning & Data</h3>
-    <div class="swiper card-swiper">
-      <div class="swiper-wrapper">
-
-        <!-- Less Annoying RoboCaller (icon: robot) -->
-        <div class="swiper-slide">
-          <a href="https://github.com/mk43275/MR-JaL" target="_blank" class="project-box">
-            <div class="thumb" aria-hidden="true"><i class="fa-solid fa-robot"></i></div>
-            <h4>Less Annoying RoboCaller</h4>
-            <h5><em>Python, Deep Learning</em></h5>
-            <p>Multimodal model that infers caller emotion from voice + transcript to improve automated service flows.</p>
-            <div class="badges"><span class="badge">Audio</span><span class="badge">NLP</span><span class="badge">Multimodal</span></div>
-          </a>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <div class="badges">
+          <span class="badge">Python</span><span class="badge">SQL</span>
+          <span class="badge">MySQL</span><span class="badge">Swift</span>
+          <span class="badge">R</span><span class="badge">JavaScript</span>
         </div>
-
-        <!-- Phish in the Web (icon: fish) -->
-        <div class="swiper-slide">
-          <a href="https://github.com/mk43275/Model-Minds" target="_blank" class="project-box">
-            <div class="thumb" aria-hidden="true"><i class="fa-solid fa-fish"></i></div>
-            <h4>Phish in the Web</h4>
-            <h5><em>Python, Supervised Learning</em></h5>
-            <p>URL classifier that flags phishing sites and highlights the key signals behind each decision.</p>
-            <div class="badges"><span class="badge">Classification</span><span class="badge">URLs</span><span class="badge">Security</span></div>
-          </a>
+      </div>
+      <div class="skill-card">
+        <h3>Data Analysis</h3>
+        <div class="badges">
+          <span class="badge">EDA</span><span class="badge">Pandas</span>
+          <span class="badge">Matplotlib</span><span class="badge">Excel</span>
+          <span class="badge">Tableau</span><span class="badge">Power BI</span>
+          <span class="badge">Quantitative</span><span class="badge">Qualitative</span>
+          <span class="badge">G Suite</span>
         </div>
-
-        <!-- Telco Anti-Churn (icon: chart-pie) -->
-        <div class="swiper-slide">
-          <a href="https://github.com/mk43275/I310D-Data-Detectives" target="_blank" class="project-box">
-            <div class="thumb" aria-hidden="true"><i class="fa-solid fa-chart-pie"></i></div>
-            <h4>Telco Anti-Churn Initiative</h4>
-            <h5><em>Python, ML, EDA</em></h5>
-            <p>Churn prediction that surfaces risk drivers and guides targeted retention actions.</p>
-            <div class="badges"><span class="badge">EDA</span><span class="badge">Feature Eng.</span><span class="badge">Classification</span></div>
-          </a>
+      </div>
+      <div class="skill-card">
+        <h3>Machine Learning</h3>
+        <div class="badges">
+          <span class="badge">ETL</span><span class="badge">NLP</span>
+          <span class="badge">Deep Learning</span><span class="badge">Data Mining</span>
+          <span class="badge">Feature Eng.</span><span class="badge">Data Modeling</span>
+          <span class="badge">Trend Forecasting</span>
         </div>
-
-        <!-- Safer City for Pittsburgh (icon: city) -->
-        <div class="swiper-slide">
-          <a href="https://github.com/mk43275/Pittsburgh" target="_blank" class="project-box">
-            <div class="thumb" aria-hidden="true"><i class="fa-solid fa-city"></i></div>
-            <h4>Safer City for Pittsburgh</h4>
-            <h5><em>Python, Data Engineering, Viz</em></h5>
-            <p>Integrated city & external data to spotlight condemned-property risks and mitigation options.</p>
-            <div class="badges"><span class="badge">Data Cleaning</span><span class="badge">Integration</span><span class="badge">Viz</span></div>
-          </a>
+      </div>
+      <div class="skill-card">
+        <h3>Cloud & Tools</h3>
+        <div class="badges">
+          <span class="badge">AWS</span><span class="badge">Git</span><span class="badge">GitHub</span>
         </div>
-
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <div class="divider"></div>
 
-<section id="experience-section">
-  <h2>Experience</h2>
-
-  <div class="experience-list">
-
-    <!-- AI EXPERIENCE -->
-    <div class="experience-item">
-      <div class="icon"><i class="fa-solid fa-sparkles" aria-hidden="true"></i></div>
-      <div class="content">
-        <h3>Business Analyst — LOE Cosmetics</h3>
-        <div class="meta">Nov 2023 – Apr 2025</div>
-        <p>Led 5+ AI/ML initiatives (recommenders, customer segmentation), lifting sales by ~18% and reducing inventory costs ~12% via time-series demand forecasting.</p>
+  <!-- Projects (icons only) -->
+  <section id="projects-section">
+    <h2>Projects</h2>
+    <div class="project-subsection">
+      <div class="swiper card-swiper">
+        <div class="swiper-wrapper">
+          <!-- MRJAL -->
+          <div class="swiper-slide">
+            <a href="https://github.com/mk43275/MR-JaL" target="_blank" class="project-box">
+              <div class="thumb" aria-hidden="true"><i class="fa-solid fa-robot"></i></div>
+              <h4>Less Annoying RoboCaller</h4>
+              <h5><em>Python, Deep Learning</em></h5>
+              <p>Multimodal model inferring caller emotion from voice + transcript to improve automated service flows.</p>
+              <div class="badges"><span class="badge">Audio</span><span class="badge">NLP</span><span class="badge">Multimodal</span></div>
+            </a>
+          </div>
+          <!-- Phish in the Web -->
+          <div class="swiper-slide">
+            <a href="https://github.com/mk43275/Model-Minds" target="_blank" class="project-box">
+              <div class="thumb" aria-hidden="true"><i class="fa-solid fa-fish"></i></div>
+              <h4>Phish in the Web</h4>
+              <h5><em>Python, Supervised Learning</em></h5>
+              <p>URL classifier that flags phishing sites and surfaces the key signals behind each decision.</p>
+              <div class="badges"><span class="badge">Classification</span><span class="badge">URLs</span><span class="badge">Security</span></div>
+            </a>
+          </div>
+          <!-- Telco Anti-Churn -->
+          <div class="swiper-slide">
+            <a href="https://github.com/mk43275/I310D-Data-Detectives" target="_blank" class="project-box">
+              <div class="thumb" aria-hidden="true"><i class="fa-solid fa-chart-pie"></i></div>
+              <h4>Telco Anti-Churn Initiative</h4>
+              <h5><em>Python, ML, EDA</em></h5>
+              <p>Churn prediction to surface risk drivers and guide targeted retention actions.</p>
+              <div class="badges"><span class="badge">EDA</span><span class="badge">Feature Eng.</span><span class="badge">Classification</span></div>
+            </a>
+          </div>
+          <!-- Safer City for Pittsburgh -->
+          <div class="swiper-slide">
+            <a href="https://github.com/mk43275/Pittsburgh" target="_blank" class="project-box">
+              <div class="thumb" aria-hidden="true"><i class="fa-solid fa-city"></i></div>
+              <h4>Safer City for Pittsburgh</h4>
+              <h5><em>Python, Data Engineering, Viz</em></h5>
+              <p>Integrated city + external data to spotlight condemned-property risks and mitigation options.</p>
+              <div class="badges"><span class="badge">Data Cleaning</span><span class="badge">Integration</span><span class="badge">Viz</span></div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="experience-item">
-      <div class="icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
-      <div class="content">
-        <h3>Data Science Researcher</h3>
-        <div class="meta">Apr 2024 – Present<!-- assumed continuous; edit if needed --></div>
-        <p>Built Python pipelines for 100K+ image-instruction pairs and fine-tuned a secure VLM; deployed/scaled inference on AWS SageMaker.</p>
-      </div>
-    </div>
-
-    <div class="experience-item">
-      <div class="icon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></div>
-      <div class="content">
-        <h3>AI/ML Engineer — Virginia Innovation Partnership Corporation (VIPC)</h3>
-        <div class="meta">Aug 2025 – Present</div>
-        <p>Shipped an AWS-hosted investment evaluation model plus agents and data automations (Edda/Airtable/Box), standardizing due-diligence and improving accuracy ~15%.</p>
-      </div>
-    </div>
-
-    <!-- CYBER EXPERIENCE -->
-    <div class="experience-item">
-      <div class="icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
-      <div class="content">
-        <h3>Cyber 9/12 Strategy Challenge</h3>
-        <div class="meta">Feb 2025 (Austin, 6th) • Apr 2025 (Washington, D.C., 4th)</div>
-        <p>Produced policy briefs that connect technical risk to strategy in a national cyber policy simulation.</p>
-      </div>
-    </div>
-
-    <div class="experience-item">
-      <div class="icon"><i class="fa-solid fa-landmark" aria-hidden="true"></i></div>
-      <div class="content">
-        <h3>Texas Cybersecurity Consultant — City of Devine</h3>
-        <div class="meta">[Add dates]</div>
-        <p>Assessed municipal security posture and implemented prioritized controls—asset inventory, IAM hardening, and logging baselines—based on cost-impact tradeoffs.</p>
-      </div>
-    </div>
-
-    <div class="experience-item">
-      <div class="icon"><i class="fa-solid fa-network-wired" aria-hidden="true"></i></div>
-      <div class="content">
-        <h3>Security Analyst — UT Austin RSOC</h3>
-        <div class="meta">[Add dates]</div>
-        <p>Monitored SIEM alerts, triaged incidents, and maintained response playbooks to streamline analyst handoffs.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+  </section>
 
   <div class="divider"></div>
 
+  <!-- Experience (vertical list, icons + one-liners) -->
+  <section id="experience-section">
+    <h2>Experience</h2>
+    <div class="experience-list">
+      <!-- AI -->
+      <div class="experience-item">
+        <div class="icon"><i class="fa-solid fa-sparkles" aria-hidden="true"></i></div>
+        <div class="content">
+          <h3>Business Analyst — LOE Cosmetics</h3>
+          <div class="meta">Nov 2023 – Apr 2025</div>
+          <p>Led AI/ML initiatives (recommenders, segmentation) that lifted sales ~18% and reduced inventory costs ~12% with demand forecasting.</p>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+        <div class="content">
+          <h3>Data Science Researcher</h3>
+          <div class="meta">Apr 2024 – Present</div>
+          <p>Built pipelines for 100K+ image-instruction pairs and fine-tuned a secure VLM; deployed/scaled inference on AWS SageMaker.</p>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="icon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></div>
+        <div class="content">
+          <h3>AI/ML Engineer — Virginia Innovation Partnership Corporation (VIPC)</h3>
+          <div class="meta">Aug 2025 – Present</div>
+          <p>Shipped AWS-hosted investment evaluation plus agents & automations (Edda/Airtable/Box), standardizing due diligence and improving accuracy ~15%.</p>
+        </div>
+      </div>
+      <!-- Cyber -->
+      <div class="experience-item">
+        <div class="icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+        <div class="content">
+          <h3>Cyber 9/12 Strategy Challenge</h3>
+          <div class="meta">Feb 2025 (Austin, 6th) • Apr 2025 (Washington, D.C., 4th)</div>
+          <p>Produced policy briefs connecting technical risk to strategy in a national cyber policy simulation.</p>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="icon"><i class="fa-solid fa-landmark" aria-hidden="true"></i></div>
+        <div class="content">
+          <h3>Texas Cybersecurity Consultant — City of Devine</h3>
+          <div class="meta">[Add dates]</div>
+          <p>Assessed municipal posture and implemented prioritized controls—asset inventory, IAM hardening, and logging baselines.</p>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="icon"><i class="fa-solid fa-network-wired" aria-hidden="true"></i></div>
+        <div class="content">
+          <h3>Security Analyst — UT Austin RSOC</h3>
+          <div class="meta">[Add dates]</div>
+          <p>Monitored SIEM alerts, triaged incidents, and maintained response playbooks to streamline analyst handoffs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Awards -->
+  <section id="awards-section">
+    <h2>Awards</h2>
+    <ul>
+      <li>National Security Fellow — Girl Security</li>
+      <li>NobleReach Scholar — NobleReach</li>
+      <li>President — Girls Who Code @ UT Austin</li>
+      <li>Benonine Muse Scholarship</li>
+      <li>Undergraduate Research Fellowship</li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Contact -->
   <section id="leave-message-section">
     <h2>Leave a Message!</h2>
     <form id="contact-form" aria-labelledby="contact-form-heading">
       <h3 id="contact-form-heading" class="visually-hidden">Contact form</h3>
-      <input type="text" name="website" id="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="hp" />
+      <input type="text" name="website" id="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="hp"/>
       <div class="form-row">
         <label for="from_name">Name</label>
-        <input type="text" id="from_name" name="from_name" required placeholder="Your name" />
+        <input type="text" id="from_name" name="from_name" required placeholder="Your name"/>
       </div>
       <div class="form-row">
         <label for="reply_to">Email</label>
-        <input type="email" id="reply_to" name="reply_to" required placeholder="you@example.com" />
+        <input type="email" id="reply_to" name="reply_to" required placeholder="you@example.com"/>
       </div>
       <div class="form-row">
         <label for="message">Message</label>
@@ -264,8 +250,8 @@
     <p>&copy; <span id="year"></span> Minji Kim. All Rights Reserved.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -277,7 +263,7 @@
         new Swiper(el, { centeredSlides: false, spaceBetween: 0, slidesPerView: 'auto' });
       });
 
-      // ===== EmailJS keys (replace these) =====
+      // ===== EmailJS keys (replace if needed) =====
       const EMAILJS_PUBLIC_KEY = 'UpNi0GjFfjxYSC_FnFD5Y';
       const SERVICE_ID         = 'service_jme9w4e';
       const TEMPLATE_ID        = 'template_qnvxodt';
@@ -324,5 +310,7 @@
 </body>
 </html>
 
+
 # all rights to Steph Ran
+
 
